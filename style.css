@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eef6fb;
+}
+
+/* Loader container */
+.google-loader {
+  display: flex;
+  gap: 14px;
+}
+
+/* Common dot style */
+.google-loader span {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  animation: bounce 1.2s ease-in-out infinite;
+}
+
+/* Google colors */
+.blue   { background: #4285F4; animation-delay: 0s; }
+.red    { background: #DB4437; animation-delay: 0.15s; }
+.yellow { background: #F4B400; animation-delay: 0.3s; }
+.green  { background: #0F9D58; animation-delay: 0.45s; }
+
+/* Micro animation */
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  40% {
+    transform: translateY(-12px);
+    opacity: 1;
+  }
+}
